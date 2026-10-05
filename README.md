@@ -1,0 +1,2 @@
+# Sobre
+#### Projeto que se baseia em um painel de registro e login construido em [Express JS](https://expressjs.com/), [Zod](https://zod.dev/), [React](https://react.dev/), o mesmo deve ser entendido como um conteudo para finalidade educacional. Se estiver curioso sobre a posse do projeto, leia [LICENSE](https://github.com/totalox/Logher?tab=MPL-2.0-1-ov-file).
