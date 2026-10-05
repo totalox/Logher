@@ -1,9 +1,32 @@
-import express, { type Express, type Request, type Response } from 'express';
+import express, { type Express, type Request, type Response } from "express";
 
-const app: Express = express();
+const backend: Express = express();
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello World!');
+backend.use('/public', express.static('public'));
+
+// Get in home
+backend.get('/', (req: Request, res: Response) => {
+  res.send('Hello Totalo!');
 });
 
-app.listen(3000);
+// Get in /user
+backend.get("/user", (req: Request, res: Response) => {
+  res.send("Get in /user")
+
+});
+// Put in /user
+backend.put("/user", (req: Request, res: Response) => {
+  res.send("Put in /user")
+});
+
+// Delete in /user
+backend.delete("/user", (req: Request, res: Response) => {
+  res.send("Delete in /user")
+});
+
+// Post in /user
+backend.post("/user", (req: Request, res: Response) => {
+  res.send("Post in /user")
+})
+
+backend.listen(3000);
