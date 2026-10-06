@@ -40,5 +40,4 @@ backend.post("/user", (req: Request, res: Response) => {
   res.get("./")
 });
 
-
 backend.listen(5500);
