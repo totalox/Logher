@@ -1,8 +1,20 @@
-import express, { type Express, type Request, type Response } from "express";
+import express, { type Express, type Request, type Response, type NextFunction } from "express";
 
-const backend: Express = express();
+export const backend: Express = express();
 
 backend.use('/public', express.static('public'));
+
+// Secret session (test)
+backend.all('/secret', (req: Request, res: Response, next: NextFunction) => {
+  console.log('Accessing the secret section ...');
+  res.send("Access with success the secret area...")
+  next(); // pass control to the next handler
+});
+
+//
+backend.get(/a/, (req: Request, res: Response) => {
+  res.send('/a/');
+});
 
 // Get in home
 backend.get('/', (req: Request, res: Response) => {
@@ -12,7 +24,6 @@ backend.get('/', (req: Request, res: Response) => {
 // Get in /user
 backend.get("/user", (req: Request, res: Response) => {
   res.send("Get in /user")
-
 });
 // Put in /user
 backend.put("/user", (req: Request, res: Response) => {
@@ -26,7 +37,8 @@ backend.delete("/user", (req: Request, res: Response) => {
 
 // Post in /user
 backend.post("/user", (req: Request, res: Response) => {
-  res.send("Post in /user")
-})
+  res.get("./")
+});
 
-backend.listen(3000);
+
+backend.listen(5500);
