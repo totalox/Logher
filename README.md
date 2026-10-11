@@ -1,12 +1,7 @@
 # Frontend
 - React
 - React Router v8
-
-# Backend
-- ExpressJS
-- Prisma v8
-- Zod
-- Bcrypt
+- React Hook Form
 
 #### Link to access backend repository [Logher Backend Repository](https://github.com/totalox/Logher-backend)
 
