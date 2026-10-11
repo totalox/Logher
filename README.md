@@ -1,4 +1,4 @@
-# Frontend
+# Tecnologies
 - Typescript
 - React
 - React Router v8
@@ -6,6 +6,6 @@
 - Zod / ZodResolver
 
 #### Link to access backend repository [Logher Backend Repository](https://github.com/totalox/Logher-backend)
-
-# Quickstart
+---
+### Quickstart
 ##### Coming Soon
