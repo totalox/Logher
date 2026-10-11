@@ -7,5 +7,5 @@
 
 #### Link to access backend repository [Logher Backend Repository](https://github.com/totalox/Logher-backend)
 
-# Quickstart (Frontend)
+# Quickstart
 ##### Coming Soon
